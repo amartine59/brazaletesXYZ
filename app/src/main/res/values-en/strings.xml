@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">XYZ Bracelets</string>
+    <string name="ordenar">Order your bracelet here</string>
+    <string name="material">Material</string>
+    <string name="dije">Pendant</string>
+    <string name="tipo">Type</string>
+    <string name="moneda">Currency</string>
+    <string name="cantidad">Quantity</string>
+    <string name="orden">Order Now!</string>
+    <string name="totalpagar">Total to Pay</string>
+    <string name="cuero">Leather</string>
+    <string name="cuerda">Rope</string>
+    <string name="martillo">Hammer</string>
+    <string name="ancla">Anchor</string>
+    <string name="oro">Gold</string>
+    <string name="oro_rosado">Pink Gold</string>
+    <string name="plata">Silver</string>
+    <string name="niquel">Nickel</string>
+    <string name="dolares">USD</string>
+    <string name="pesos">COP</string>
+</resources>
