@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">ManillasXYZ</string>
+    <string name="ordenar">Ordene aquí su manilla</string>
+    <string name="material">Material</string>
+    <string name="dije">Dije</string>
+    <string name="tipo">Tipo</string>
+    <string name="moneda">Moneda</string>
+    <string name="cantidad">Cantidad</string>
+    <string name="orden">Ordenar ahora!</string>
+    <string name="totalpagar">Total a Pagar</string>
 </resources>
