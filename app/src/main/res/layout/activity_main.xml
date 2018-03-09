@@ -111,11 +111,14 @@
                 android:text="@string/cantidad"
                 android:textSize="18sp" />
 
-            <Spinner
-                android:id="@+id/spinner7"
+            <EditText
+                android:id="@+id/editText"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number" />
+
         </LinearLayout>
 
         <LinearLayout
