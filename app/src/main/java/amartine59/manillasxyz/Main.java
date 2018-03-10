@@ -31,11 +31,17 @@ public class Main extends AppCompatActivity {
         tipo= findViewById(R.id.cmbTipo);
         moneda= findViewById(R.id.cmbMoneda);
         mOpciones=recursos.getStringArray(R.array.materialOP);
-        ArrayAdapter<String> adpMaterial = new ArrayAdapter(this,android.R.layout.simple_spinner_dropdown_item,mOpciones);
+        ArrayAdapter<String> adpMaterial = new ArrayAdapter(this,android.R.layout.simple_spinner_item,mOpciones);
         material.setAdapter(adpMaterial);
         dOpciones=recursos.getStringArray(R.array.dijeOP);
+        ArrayAdapter<String> adpDije = new ArrayAdapter(this,android.R.layout.simple_spinner_item,dOpciones);
+        dije.setAdapter(adpDije);
         tOpciones=recursos.getStringArray(R.array.tipOP);
+        ArrayAdapter<String>adpTipo = new ArrayAdapter(this,android.R.layout.simple_spinner_item,tOpciones);
+        tipo.setAdapter(adpTipo);
         mnOpciones=recursos.getStringArray(R.array.monedaOP);
+        ArrayAdapter<String> adpMoneda = new ArrayAdapter(this,android.R.layout.simple_spinner_item,mnOpciones);
+        moneda.setAdapter(adpMoneda);
         btPagar = findViewById(R.id.btnOrdenar);
     }
 }
