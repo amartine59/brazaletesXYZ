@@ -71,7 +71,12 @@ public class Main extends AppCompatActivity {
             cantidadIngresada = Integer.parseInt(Cant.getText().toString());
 
             Precio = Metodos.totalPagar(cantidadIngresada,materialSeleccionado,dijeSeleccionado,tipoSeleccionado,monedaSeleccionada);
-            totalPagar.setText(""+Precio);
+            if (monedaSeleccionada==0){
+                totalPagar.setText(""+Precio+" "+recursos.getString(R.string.dolares));
+            }else{
+                totalPagar.setText(""+Precio+" "+ recursos.getString(R.string.pesos));
+            }
+
         }
     }
 }
