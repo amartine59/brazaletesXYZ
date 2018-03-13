@@ -19,4 +19,6 @@
     <string name="niquel">Nickel</string>
     <string name="dolares">USD</string>
     <string name="pesos">COP</string>
+    <string name="error_vacio">Type the quantity of bracelets you would like to buy</string>
+    <string name="error_negativo">You cannot order less than one bracelet</string>
 </resources>

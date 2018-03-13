@@ -36,4 +36,6 @@
         <item>@string/dolares</item>
         <item>@string/pesos</item>
     </string-array>
+    <string name="error_vacio">Ingrese  cantidad de manillas a comprar</string>
+    <string name="error_negativo">Cantidad ingresada incorrecta</string>
 </resources>
