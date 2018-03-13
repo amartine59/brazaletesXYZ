@@ -4,6 +4,7 @@ import android.content.res.Resources;
 import android.os.TestLooperManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -43,5 +44,32 @@ public class Main extends AppCompatActivity {
         ArrayAdapter<String> adpMoneda = new ArrayAdapter(this,android.R.layout.simple_spinner_item,mnOpciones);
         moneda.setAdapter(adpMoneda);
         btPagar = findViewById(R.id.btnOrdenar);
+    }
+
+    public boolean validarCampos(){
+        if (Cant.getText().toString().isEmpty()){
+            Cant.requestFocus();
+            Cant.setError(recursos.getString(R.string.error_vacio));
+            return false;
+        }
+        if (Integer.parseInt(Cant.getText().toString())<1){
+            Cant.requestFocus();
+            Cant.setError(recursos.getString(R.string.error_negativo));
+            return false;
+        }
+        return true;
+    }
+
+    public void pagarBrazalete(View v){
+        int materialSeleccionado,dijeSeleccionado,tipoSeleccionado,monedaSeleccionada,cantidadIngresada,totalPagar=0,Precio=0;
+        if (validarCampos()){
+            materialSeleccionado = material.getSelectedItemPosition();
+            dijeSeleccionado = dije.getSelectedItemPosition();
+            tipoSeleccionado = tipo.getSelectedItemPosition();
+            monedaSeleccionada = moneda.getSelectedItemPosition();
+            cantidadIngresada = Integer.parseInt(Cant.getText().toString());
+
+            
+        }
     }
 }
