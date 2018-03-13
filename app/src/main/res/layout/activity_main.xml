@@ -125,6 +125,7 @@
                 android:id="@+id/btnOrdenar"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:onClick="pagarBrazalete"
                 android:text="@string/orden"
                 android:textSize="18sp" />
 

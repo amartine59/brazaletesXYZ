@@ -61,7 +61,8 @@ public class Main extends AppCompatActivity {
     }
 
     public void pagarBrazalete(View v){
-        int materialSeleccionado,dijeSeleccionado,tipoSeleccionado,monedaSeleccionada,cantidadIngresada,totalPagar=0,Precio=0;
+        int materialSeleccionado,dijeSeleccionado,tipoSeleccionado,monedaSeleccionada,cantidadIngresada, Precio=0;
+        totalPagar.setText("");
         if (validarCampos()){
             materialSeleccionado = material.getSelectedItemPosition();
             dijeSeleccionado = dije.getSelectedItemPosition();
@@ -69,7 +70,8 @@ public class Main extends AppCompatActivity {
             monedaSeleccionada = moneda.getSelectedItemPosition();
             cantidadIngresada = Integer.parseInt(Cant.getText().toString());
 
-            
+            Precio = Metodos.totalPagar(cantidadIngresada,materialSeleccionado,dijeSeleccionado,tipoSeleccionado,monedaSeleccionada);
+            totalPagar.setText(""+Precio);
         }
     }
 }
