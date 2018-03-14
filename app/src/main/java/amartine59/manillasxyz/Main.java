@@ -34,9 +34,11 @@ public class Main extends AppCompatActivity {
         mOpciones=recursos.getStringArray(R.array.materialOP);
         ArrayAdapter<String> adpMaterial = new ArrayAdapter(this,android.R.layout.simple_spinner_item,mOpciones);
         material.setAdapter(adpMaterial);
+
         dOpciones=recursos.getStringArray(R.array.dijeOP);
         ArrayAdapter<String> adpDije = new ArrayAdapter(this,android.R.layout.simple_spinner_item,dOpciones);
         dije.setAdapter(adpDije);
+
         tOpciones=recursos.getStringArray(R.array.tipOP);
         ArrayAdapter<String>adpTipo = new ArrayAdapter(this,android.R.layout.simple_spinner_item,tOpciones);
         tipo.setAdapter(adpTipo);
